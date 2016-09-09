@@ -10,7 +10,7 @@ _An event planning command line application using java_
 
 ## Setup/Installation Requirements
 
-_Clone the repo and open up index.html to view in your web browser._
+_Clone the repo and open up in Java command line_
 
 ## Specifications
 
