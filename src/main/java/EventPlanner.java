@@ -32,8 +32,8 @@ public class EventPlanner {
       price = 15 * mGuestNumber;
     } else if (mFood.equals("Fish Dinner")) {
       price = 17 * mGuestNumber;
-    } else if(mFood.equals("Steak Dinner")) {
-      price = 20 * mGuestNumber;
+    } else if(mFood.equals("Appetizers")) {
+      price = 8 * mGuestNumber;
     } else{
       price = price;
     }

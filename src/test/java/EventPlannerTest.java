@@ -25,7 +25,7 @@ public class EventPlannerTest {
     assertEquals(expected, testEventPlanner.calculateBill());
   }
   @Test
-  public void calculateBill_returnBillForMultipleServices_300(){
+  public void calculateBill_returnBillForMultipleServices_1040(){
     EventPlanner testEventPlanner = new EventPlanner(20,"Steak Dinner","Coffee and Tea", "Karaoke");
     Integer expected = 1040;
     assertEquals(expected, testEventPlanner.calculateBill());
