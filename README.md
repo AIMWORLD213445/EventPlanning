@@ -17,9 +17,6 @@ _Clone the repo and open up index.html to view in your web browser._
 * Behavior: Return a cost for a specific service.
   * **Example input:** Chicken Dinner
   * **Example output:** $500
-* Behavior: Return the correct cost for separate services.
-  * **Example input:** Chicken Dinner, Open Bar
-  * **Example output:** $500, $1000
 * Behavior: Correctly add/multiply a number of combined services accounting for factors like number of guests
   * **Example input:** Chicken Dinner, Open Bar, 50 people
   * **Example output:** $3000
