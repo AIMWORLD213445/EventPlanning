@@ -1,28 +1,28 @@
 public class EventPlanner {
   // private int mGuestNumber;
-  // private String mFood;
-  // private String mBverages;
+  private String mFood;
+  private String mBeverages;
   // private String mEntertainment;
 
-  // public EventPlanner(int guestNumber, String food, String beverages, String entertainment) {
+  public EventPlanner( String food, String beverages) {
   //   mGuestNumber = guestNumber;
-  //   mFood = food;
-  //   mBeverages = beverages;
+    mFood = food;
+    mBeverages = beverages;
   //   mEntertainment = entertainment;
-  // }
+  }
   //
   // public int getGuestNumber() {
   //   return mGuestNumber;
   // }
-  // public String getFood() {
-  //   return mFood;
-  // }
-  // public String getBeverages() {
-  //   return mBeverages;
-  // }
+  public String getFood() {
+    return mFood;
+  }
+  public String getBeverages() {
+    return mBeverages;
+  }
   // public String getEntertainment() {
   //   return mEntertainment;
-  // }
+  }
 
 
 
@@ -33,4 +33,4 @@ public class EventPlanner {
   //
   //   }
   // }
-}
+// }
