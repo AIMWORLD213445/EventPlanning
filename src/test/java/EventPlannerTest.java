@@ -19,9 +19,15 @@ public class EventPlannerTest {
     assertEquals("Open Bar", testEventPlanner.getBeverages());
   }
   @Test
-  public void calculateBill_returnBillForAnyService_500(){
-    EventPlanner testEventPlanner = new EventPlanner(20,"Chicken Dinner","Open Bar", "Jazz Band");
-    Integer expected = 500;
+  public void calculateBill_returnBillForAnyService_300(){
+    EventPlanner testEventPlanner = new EventPlanner(20,"Chicken Dinner","Just Water", "No Band");
+    Integer expected = 300;
+    assertEquals(expected, testEventPlanner.calculateBill());
+  }
+  @Test
+  public void calculateBill_returnBillForMultipleServices_300(){
+    EventPlanner testEventPlanner = new EventPlanner(20,"Steak Dinner","Coffee and Tea", "Karaoke");
+    Integer expected = 1040;
     assertEquals(expected, testEventPlanner.calculateBill());
   }
 

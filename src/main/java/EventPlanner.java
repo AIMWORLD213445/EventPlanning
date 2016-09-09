@@ -25,23 +25,35 @@ public class EventPlanner {
     return mEntertainment;
   }
 
-  public Integer calculateBill(){
+  public Integer calculateBill() {
     Integer price = 0;
 
-    if(mFood.equals("Chicken Dinner")){
-      price = 500;
+    if(mFood.equals("Chicken Dinner")) {
+      price = 15 * mGuestNumber;
+    } else if (mFood.equals("Fish Dinner")) {
+      price = 17 * mGuestNumber;
+    } else if(mFood.equals("Steak Dinner")) {
+      price = 20 * mGuestNumber;
+    } else{
+      price = price;
+    }
+
+    if(mBeverages.equals("Open Bar")) {
+      price += 20 * mGuestNumber;
+    } else if (mBeverages.equals("Coffee and Tea")) {
+      price += 7 * mGuestNumber;
     } else {
       price = price;
     }
+
+    if(mEntertainment.equals("Jazz Band")) {
+      price += 1000;
+    } else if (mEntertainment.equals("Karaoke")) {
+      price += 500;
+    } else {
+      price = price;
+    }
+
     return price;
-
-
-    // else if(mFood.equals("Fish Dinner")){
-    //   mPrice = ((mGuestNumber/10)*15);
-    // }else if(mFood.equals("Steak Dinner")){
-    //   mPrice = ((mGuestNumber/10)*20);
-    // }else if(mFood.equals("Fish Dinner")){
-    //   mPrice = ((mGuestNumber/10)*15);
-    // }
+    }
   }
-}
