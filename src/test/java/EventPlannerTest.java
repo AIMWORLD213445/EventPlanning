@@ -4,9 +4,14 @@ import static org.junit.Assert.*;
 public class EventPlannerTest {
 
   @Test
-  public void calculateBill_returnBillForAnyService_500(){
+  public void newEventPlanner_instantiatesCorrectly(){
     EventPlanner testEventPlanner = new EventPlanner();
     assertEquals(true, testEventPlanner instanceof EventPlanner);
+  }
+  @Test
+  public void newEventPlanner_getsFood(){
+    EventPlanner testEventPlanner = new EventPlanner("Chicken Dinner");
+    assertEquals("Chicken Dinner", testEventPlanner.getFood());
   }
   // @Test
   // public void calculateBill_returnBillForAnyService_500(){
