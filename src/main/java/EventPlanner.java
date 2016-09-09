@@ -28,9 +28,9 @@ public class EventPlanner {
   public Integer calculateBill() {
     Integer price = 0;
 
-    if(mFood.equals("Chicken Dinner")) {
+    if(mFood.equals("A Chicken Dinner")) {
       price = 15 * mGuestNumber;
-    } else if (mFood.equals("Fish Dinner")) {
+    } else if (mFood.equals("A Fish Dinner")) {
       price = 17 * mGuestNumber;
     } else if(mFood.equals("Appetizers")) {
       price = 8 * mGuestNumber;
@@ -38,7 +38,7 @@ public class EventPlanner {
       price = price;
     }
 
-    if(mBeverages.equals("Open Bar")) {
+    if(mBeverages.equals("An Open Bar")) {
       price += 20 * mGuestNumber;
     } else if (mBeverages.equals("Coffee and Tea")) {
       price += 7 * mGuestNumber;
@@ -46,7 +46,7 @@ public class EventPlanner {
       price = price;
     }
 
-    if(mEntertainment.equals("Jazz Band")) {
+    if(mEntertainment.equals("A Jazz Band")) {
       price += 1000;
     } else if (mEntertainment.equals("Karaoke")) {
       price += 500;
