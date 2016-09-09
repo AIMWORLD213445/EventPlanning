@@ -4,7 +4,6 @@ public class EventPlanner {
   private String mBeverages;
   private String mEntertainment;
 
-
   public EventPlanner( int guestNumber, String food, String beverages, String entertainment) {
     mGuestNumber = guestNumber;
     mFood = food;

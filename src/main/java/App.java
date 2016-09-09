@@ -13,8 +13,7 @@ public class App {
     System.out.println("What kind of entertainment do you want at your Party? Enter either 'A Jazz Band', 'Karaoke', or 'No Entertainment'");
     String stringEntertainment = c.readLine();
     EventPlanner userEvent = new EventPlanner(intGuestNumber, stringFood, stringBeverages, stringEntertainment);
-    Integer partyCost = userEvent.calculateBill();
-    String userInfo = String.format("You have requested %s as well as %s and %s for %d people. Your total price will be $%d.", stringFood, stringBeverages, stringEntertainment, intGuestNumber, partyCost);
+    String userInfo = String.format("You have requested %s as well as %s and %s for %d people. Your total price will be $%d.", stringFood, stringBeverages, stringEntertainment, intGuestNumber, userEvent.calculateBill());
     System.out.println(userInfo);
   }
 }
